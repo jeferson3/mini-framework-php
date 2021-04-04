@@ -14,6 +14,6 @@ composer install <br>
 edit credentials config.ini <br>
 </li>
 <li>
-run composer start
+run composer server
 </li>
 </ul>
