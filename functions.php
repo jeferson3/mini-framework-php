@@ -56,3 +56,19 @@ function old(string $value): string
     }
     return "";
 }
+
+/**
+ * function for return project settings
+ *
+ * @return array
+ */
+function loadConfigs() : array
+{
+    $dir = $_SERVER['DOCUMENT_ROOT']."/src/Config/Config.ini";
+
+    if (file_exists($dir))
+    {
+        return parse_ini_file($dir);
+    }
+    return array();
+}
