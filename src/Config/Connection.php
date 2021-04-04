@@ -36,14 +36,16 @@ namespace App\Config;
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 
+$settings = loadConfigs();
+
 $capsule = new Capsule;
 
 $capsule->addConnection([
-    "driver" => "mysql",
-    'host'      => 'localhost',
-    'database'  => 'teste',
-    'username'  => 'root',
-    'password'  => '',
+    "driver" => isset($settings["driver"]) ? $settings["driver"] : "mysql",
+    'host'      => isset($settings["host"]) ? $settings["host"] : 'localhost',
+    'database'  => isset($settings["database"]) ? $settings["database"] : 'teste',
+    'username'  => isset($settings["username"]) ? $settings["username"] : 'root',
+    'password'  => isset($settings["password"]) ? $settings["password"] : '',
     'charset'   => 'utf8',
     'collation' => 'utf8_unicode_ci'
 ]);
