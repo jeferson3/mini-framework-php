@@ -1,5 +1,5 @@
 <?php
 
-$url = "http://$_SERVER[HTTP_HOST]";
+$url = loadConfigs()['url'];
 
 date_default_timezone_set("America/Fortaleza");
