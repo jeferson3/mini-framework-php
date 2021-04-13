@@ -2,8 +2,12 @@
 
 session_start();
 
-require "start.php";
+require "vendor/autoload.php";
 
-require "bootstrap.php";
+require "functions.php";
+
+require $_SERVER['DOCUMENT_ROOT']."/src/config/Connection.php";
+
+require "start.php";
 
 require "routes.php";
