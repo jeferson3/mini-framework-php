@@ -1,4 +1,4 @@
-<script type="application/javascript" src="<?= $url.'/src/resources/assets/app.js' ?>"></script>
+<script type="application/javascript" src="<?= asset('app.js') ?>"></script>
 <?php if (isset($_SESSION['flash'])): ?>
     <script type="text/javascript">
         let flash = <?= \App\traits\Flash::load() ?>;
