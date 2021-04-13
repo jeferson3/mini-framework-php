@@ -36,6 +36,21 @@ function checkAccess(): void
 }
 
 /**
+ * @param string $name
+ * @param string|null $arg
+ * @return string
+ */
+function route(string $name, ?string $arg = null): string
+{
+    return \App\Config\Router::route($name, $arg);
+}
+
+function asset($name): string
+{
+    return loadConfigs()['url'].'/src/resources/assets/'.$name;
+}
+
+/**
  * function to get old value of requisition and send to form
  *
  * @param string $value
