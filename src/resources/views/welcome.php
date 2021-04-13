@@ -4,7 +4,6 @@
 
 <div class="container-center">
     <h1>Welcome</h1>
-
 </div>
 
 <?php include $_SERVER["DOCUMENT_ROOT"]."/src/resources/views/layouts/app/footer.php" ?>

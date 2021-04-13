@@ -3,7 +3,7 @@
 
 <div class="container-center">
     <div style="width: 500px">
-        <form action="<?= $url . '/auth/register' ?>" method="post">
+        <form action="<?= route('register.post') ?>" method="post">
             <div class="column">
                 <label for="name" class="required">Nome: </label>
                 <input type="text" name="name" id="name" required value="<?= old('name')?>">

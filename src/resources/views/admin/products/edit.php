@@ -3,10 +3,10 @@
 <div style="padding-top: 50px; margin: 0 10px">
 
     <h1>Products</h1>
-    <a href="<?= $url.'/admin/products' ?>">List</a>
+    <a href="<?= route('products') ?>">List</a>
 
     <div class="column" style="width: 500px; margin: 0 auto">
-        <form action="<?= $url.'/admin/products/'.$product->id.'/update'; ?>" method="post" enctype="multipart/form-data">
+        <form action="<?= route('products.update', $product->id) ?>" method="post" enctype="multipart/form-data">
             <input type="hidden" name="_method" value="update">
             <div class="column">
                 <label for="nome" class="required">Nome:</label>

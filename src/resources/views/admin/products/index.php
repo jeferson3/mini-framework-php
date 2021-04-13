@@ -3,7 +3,7 @@
 <div style="padding-top: 50px; margin: 0 10px">
     <div class="column">
         <h1>Products</h1>
-        <a href="<?= $url.'/admin/products/create' ?>">New</a>
+        <a href="<?= route('products.create') ?>">New</a>
         <div class="row">
             <table border="1" align="center" width="100%">
                 <thead>
@@ -34,7 +34,7 @@
                                         style="background-color: darkred; color: white; cursor:pointer; width: 80px">
                                     Delete
                                 </button>
-                                <button  style="width: 80px; background-color: darkcyan; color: white; cursor:pointer;" type="button" onclick="window.location.href = '<?= $url.'/admin/products/'.$product->id.'/show' ?>'">
+                                <button  style="width: 80px; background-color: darkcyan; color: white; cursor:pointer;" type="button" onclick="window.location.href = '<?= route('products.show',$product->id) ?>'">
                                     View
                                 </button>
                             </td>

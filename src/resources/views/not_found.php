@@ -3,7 +3,7 @@
 <div class="container-center">
     <p>
         404 - page not found <br>
-        <a href="<?= $url ?>">Home</a>
+        <a href="<?= route('home') ?>">Home</a>
     </p>
 </div>
 

@@ -3,7 +3,7 @@
 
 <div class="container-center">
     <div style="width: 300px">
-        <form action="<?= $url . '/auth/login' ?>" method="post">
+        <form action="<?= route('login.post') ?>" method="post">
             <div class="column" style="margin: 10px">
                 <label for="email">Email: </label>
                 <input type="email" name="email" id="email" required>

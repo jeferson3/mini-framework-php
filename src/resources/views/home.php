@@ -4,7 +4,7 @@
     <h1>Admin Dashboard</h1>
     <ul>
         <li>
-            <a href="<?= $url.'/admin/products' ?>">My products</a>
+            <a href="<?= route('products') ?>">My products</a>
         </li>
     </ul>
 </div>
