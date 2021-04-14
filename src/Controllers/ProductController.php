@@ -119,7 +119,7 @@ class ProductController extends Controller
                 $oldProduct->update($newProduct->jsonSerialize());
 
                 Flash::send("Produto atualizado com sucesso");
-                self::redirect('back');
+                self::redirect('admin.products');
 
             }
             Flash::send("Produto não encontrado!!!");
