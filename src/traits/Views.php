@@ -44,6 +44,7 @@ trait Views
         if ($withData)
         {
             if (isset($_POST['_method'])) unset($_POST['_method']);
+            if (isset($_POST['password'])) unset($_POST['password']);
             $_SESSION['old_value'] = $_POST;
         }
 
