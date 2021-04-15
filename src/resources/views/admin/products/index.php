@@ -20,11 +20,11 @@
                         <tr>
                             <td align="center"><?= $product->id ?></td>
                             <td><?= $product->name ?></td>
-                            <td><?= substr($product->description, 0, 50).'...' ?></td>
+                            <td><?= trim(substr($product->description, 0, 50)) ?>...</td>
                             <td><?= "R$".number_format($product->price, 2, ",",".") ?></td>
                             <td align="center">
-                                <form style="display: none" id="product<?= $product->id ?>"
-                                      action="<?= $url.'/admin/products/'.$product->id.'/delete'; ?>" method="post">
+                                <form style="display: none" id="product<?= $product->id ?>" action="<?= route('products.delete',$product->id) ?>"
+                                      method="post">
                                     <input type="hidden" name="_method" value="delete">
                                     <button type="submit" style="background-color: darkred; color: white; cursor:pointer; width: 80px">
                                         Delete

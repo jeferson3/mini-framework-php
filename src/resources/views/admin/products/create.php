@@ -8,7 +8,7 @@
     <a href="<?= $url.'/admin/products' ?>">List</a>
     <div class="column" style="width: 500px; margin: 0 auto">
 
-        <form action="<?= $url.'/admin/products/store'; ?>" method="post" enctype="multipart/form-data">
+        <form action="<?= route('products.store') ?>" method="post" enctype="multipart/form-data">
             <div class="column">
                 <label for="nome" class="required">Nome:</label>
                 <input type="text" name="name" id="nome" value="<?= old('name') ?>" required>
