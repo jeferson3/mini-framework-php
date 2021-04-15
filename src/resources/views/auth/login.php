@@ -6,7 +6,7 @@
         <form action="<?= route('login.post') ?>" method="post">
             <div class="column" style="margin: 10px">
                 <label for="email">Email: </label>
-                <input type="email" name="email" id="email" required>
+                <input type="email" name="email" id="email" value="<?= old('email') ?>" required>
             </div>
             <div class="column" style="margin: 10px">
                 <label for="password">Password: </label>

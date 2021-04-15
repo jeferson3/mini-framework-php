@@ -57,7 +57,7 @@ final class AuthController extends Controller
             if(!$user)
             {
                 Flash::send("E-mail não cadastrado!");
-                self::redirect('auth.login');
+                self::redirect('auth.login', true);
             }
 
             else if ($user->password == $password)
@@ -70,7 +70,7 @@ final class AuthController extends Controller
             else
             {
                 Flash::send("E-mail e/ou senha incorretos!");
-                self::redirect('auth.login');
+                self::redirect('auth.login', true);
             }
         }
         else
