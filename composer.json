@@ -1,14 +1,12 @@
 {
     "name": "jeferson/testephp",
     "require": {
-        "illuminate/database": "^8.33"
+        "illuminate/database": "^8.33",
+        "jeferson3/router": "dev-main"
     },
     "autoload": {
         "psr-4": {
             "App\\":"src/"
         }
-    },
-    "scripts": {
-        "server": "php -S localhost:8000"
     }
 }
