@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b6149248fe95edc58d63750c567362c7",
+    "content-hash": "63ce833267f12d398f5d4accd37b127f",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -103,16 +103,16 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v8.35.1",
+            "version": "v8.37.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
-                "reference": "0a7a96520928b61df1750b4e1909588f10ae2abe"
+                "reference": "591e31015a8b0731708c54411cb52d50a00b2bc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/collections/zipball/0a7a96520928b61df1750b4e1909588f10ae2abe",
-                "reference": "0a7a96520928b61df1750b4e1909588f10ae2abe",
+                "url": "https://api.github.com/repos/illuminate/collections/zipball/591e31015a8b0731708c54411cb52d50a00b2bc3",
+                "reference": "591e31015a8b0731708c54411cb52d50a00b2bc3",
                 "shasum": ""
             },
             "require": {
@@ -153,11 +153,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-03-25T14:54:04+00:00"
+            "time": "2021-04-01T13:26:52+00:00"
         },
         {
             "name": "illuminate/container",
-            "version": "v8.35.1",
+            "version": "v8.37.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -208,16 +208,16 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v8.35.1",
+            "version": "v8.37.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
-                "reference": "121cea1d8b8772bc7fee99c71ecf0f57c1d77b3b"
+                "reference": "5764f703ea8f74ced163125d810951cd5ef2b7e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/121cea1d8b8772bc7fee99c71ecf0f57c1d77b3b",
-                "reference": "121cea1d8b8772bc7fee99c71ecf0f57c1d77b3b",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/5764f703ea8f74ced163125d810951cd5ef2b7e1",
+                "reference": "5764f703ea8f74ced163125d810951cd5ef2b7e1",
                 "shasum": ""
             },
             "require": {
@@ -252,20 +252,20 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-03-12T14:45:30+00:00"
+            "time": "2021-04-01T13:09:31+00:00"
         },
         {
             "name": "illuminate/database",
-            "version": "v8.35.1",
+            "version": "v8.37.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "dc8033979aea3d471d2a37694b6ade00a299a0f1"
+                "reference": "a9d9c78c705bc64e92a61c33453ebbcad6dd5f29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/dc8033979aea3d471d2a37694b6ade00a299a0f1",
-                "reference": "dc8033979aea3d471d2a37694b6ade00a299a0f1",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/a9d9c78c705bc64e92a61c33453ebbcad6dd5f29",
+                "reference": "a9d9c78c705bc64e92a61c33453ebbcad6dd5f29",
                 "shasum": ""
             },
             "require": {
@@ -320,11 +320,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-03-30T13:58:56+00:00"
+            "time": "2021-04-13T13:40:36+00:00"
         },
         {
             "name": "illuminate/macroable",
-            "version": "v8.35.1",
+            "version": "v8.37.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
@@ -370,16 +370,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v8.35.1",
+            "version": "v8.37.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "8eee1bc181c87cfdac32b4d876ab44da9894771c"
+                "reference": "074a9b7adefcdd7108e19faa96bc9dacfe922062"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/8eee1bc181c87cfdac32b4d876ab44da9894771c",
-                "reference": "8eee1bc181c87cfdac32b4d876ab44da9894771c",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/074a9b7adefcdd7108e19faa96bc9dacfe922062",
+                "reference": "074a9b7adefcdd7108e19faa96bc9dacfe922062",
                 "shasum": ""
             },
             "require": {
@@ -434,7 +434,55 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-03-30T13:39:44+00:00"
+            "time": "2021-04-11T23:26:41+00:00"
+        },
+        {
+            "name": "jeferson3/router",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jeferson3/mini-router-php.git",
+                "reference": "bd9927e19282c09e750fdf5b767f753acab18d99"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jeferson3/mini-router-php/zipball/bd9927e19282c09e750fdf5b767f753acab18d99",
+                "reference": "bd9927e19282c09e750fdf5b767f753acab18d99",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "App\\": "src//"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "José Jeferson Lopes Gomes",
+                    "email": "jefersongomes333@hotmail.com",
+                    "homepage": "https://bit.ly/3v0hyiz",
+                    "role": "Developer"
+                }
+            ],
+            "description": "mini router for php project",
+            "homepage": "https://github.com/jeferson3/mini-router-php",
+            "keywords": [
+                "php",
+                "router"
+            ],
+            "support": {
+                "issues": "https://github.com/jeferson3/mini-router-php/issues",
+                "source": "https://github.com/jeferson3/mini-router-php/tree/main"
+            },
+            "time": "2021-04-16T15:29:46+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -1622,7 +1670,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "jeferson3/router": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
