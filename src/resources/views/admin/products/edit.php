@@ -3,11 +3,11 @@
 <div style="padding-top: 50px; margin: 0 10px">
 
     <h1>Products</h1>
-    <a href="<?= route('products') ?>">List</a>
+    <a href="<?= route('products.index') ?>">List</a>
 
     <div class="column" style="width: 500px; margin: 0 auto">
         <form action="<?= route('products.update', $product->id) ?>" method="post" enctype="multipart/form-data">
-            <input type="hidden" name="_method" value="update">
+            <input type="hidden" name="_method" value="put">
             <div class="column">
                 <label for="nome" class="required">Nome:</label>
                 <input type="text" name="name" id="nome" value="<?= isset($_SESSION['old_value']['name']) ? old('name') :
@@ -28,7 +28,7 @@
                 <button type="submit">Save</button>
             </div>
         </form>
-        <?= \App\traits\Error::get() ?>
+        <?php \App\traits\Error::get() ?>
     </div>
 </div>
 
