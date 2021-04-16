@@ -5,7 +5,7 @@
 <div style="padding-top: 50px; margin: 0 10px">
 
     <h1>Products</h1>
-    <a href="<?= $url.'/admin/products' ?>">List</a>
+    <a href="<?= route('products.index') ?>">List</a>
     <div class="column" style="width: 500px; margin: 0 auto">
 
         <form action="<?= route('products.store') ?>" method="post" enctype="multipart/form-data">
