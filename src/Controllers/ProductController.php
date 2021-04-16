@@ -93,8 +93,7 @@ class ProductController extends Controller
     public static function update(int $id)
     {
         self::middleware('auth');
-        if (isset($id) and !empty($id) and isset($_POST['_method']) and !empty($_POST['_method']) and $_POST['_method'] == "update" and
-            isset($_POST['name']) and !empty($_POST['name']) and
+        if (isset($_POST['name']) and !empty($_POST['name']) and
             isset($_POST['price']) and !empty($_POST['price']) and
             isset($_POST['description']) and !empty($_POST['description']))
         {
@@ -152,23 +151,17 @@ class ProductController extends Controller
     {
         self::middleware('auth');
 
-        if (isset($id) and !empty($id) and isset($_POST['_method']) and !empty($_POST['_method']) and $_POST['_method'] == "delete")
+        $product = Product::find($id);
+
+        if (!is_null($product))
         {
-            $product = Product::find($id);
+            $product->delete();
 
-            if (!is_null($product))
-            {
-                $product->delete();
-
-                Flash::send("Produto deletado com sucesso");
-                self::redirect('admin.products');
-            }
-
-            Flash::send("Produto não encontrado!");
+            Flash::send("Produto deletado com sucesso");
             self::redirect('admin.products');
         }
 
-        Flash::send("Aconteceu um erro inesperado");
-        self::redirect('back');
+        Flash::send("Produto não encontrado!");
+        self::redirect('admin.products');
     }
 }
