@@ -4,7 +4,7 @@
     <h1>Admin Dashboard</h1>
     <ul>
         <li>
-            <a href="<?= route('products') ?>">My products</a>
+            <a href="<?= route('products.index') ?>">My products</a>
         </li>
     </ul>
 </div>
