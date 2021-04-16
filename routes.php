@@ -16,6 +16,9 @@ Router::post("/auth/logout", "AuthController@logout")->name('logout');
 
 Router::get("/admin/dashboard", "HomeController@dashboard")->name('dashboard');
 
+Router::resource("admin/products", "ProductController")->name('products');
+
+/*
 Router::get("/admin/products", "ProductController@index")->name('products');
 
 Router::get("/admin/products/create", "ProductController@create")->name('products.create');
@@ -27,5 +30,5 @@ Router::get("/admin/products/{id}/show", "ProductController@show")->name('produc
 Router::post("/admin/products/{id}/update", "ProductController@update")->name('products.update');
 
 Router::post("/admin/products/{id}/delete", "ProductController@delete")->name('products.delete');
-
+*/
 Router::init();
