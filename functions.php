@@ -87,3 +87,14 @@ function loadConfigs() : array
     }
     return array();
 }
+
+function ssl(){
+    $url = $_SERVER["HTTP_HOST"].$_SERVER["REQUEST_URI"];
+    if (loadConfigs()['force_ssl'])
+    {
+        if ($_SERVER['HTTPS'] != 'on')
+        {
+            header("location: https://".$url);
+        }
+    }
+}

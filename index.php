@@ -10,4 +10,6 @@ require $_SERVER['DOCUMENT_ROOT']."/src/config/Connection.php";
 
 require "start.php";
 
+ssl();
+
 require "routes.php";
