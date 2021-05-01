@@ -17,3 +17,5 @@ edit credentials config.ini <br>
 run php server - php -S localhost:8000
 </li>
 </ul>
+
+<h3>https://mini-framework-ph.000webhostapp.com/</h3>
