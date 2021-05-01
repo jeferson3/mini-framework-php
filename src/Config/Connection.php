@@ -42,10 +42,10 @@ $capsule = new Capsule;
 
 $capsule->addConnection([
     "driver" => isset($settings["driver"]) ? $settings["driver"] : "mysql",
-    'host'      => isset($settings["host"]) ? $settings["host"] : 'localhost',
-    'database'  => isset($settings["database"]) ? $settings["database"] : 'teste',
-    'username'  => isset($settings["username"]) ? $settings["username"] : 'root',
-    'password'  => isset($settings["password"]) ? $settings["password"] : '',
+    'host'      => isset($settings["dbhost"]) ? $settings["dbhost"] : 'localhost',
+    'database'  => isset($settings["dbname"]) ? $settings["dbname"] : 'teste',
+    'username'  => isset($settings["dbuser"]) ? $settings["dbuser"] : 'root',
+    'password'  => isset($settings["dbass"]) ? $settings["dbass"] : '',
     'charset'   => 'utf8',
     'collation' => 'utf8_unicode_ci'
 ]);
