@@ -14,10 +14,8 @@ composer install <br>
 edit credentials config.ini <br>
 </li>
 <li>
-run php server
-```
+run php server:
 php -S localhost:8000
-```
 </li>
 </ul>
 
