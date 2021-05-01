@@ -4,6 +4,9 @@ Mini framework php - MVC + Eloquent + Router + Middleware + Autenticação
 </p>
 <br>
 <p>
+ O intuito deste projeto é por em prática conhecimentos de back end com php.  
+<p/>
+<p>
 Start: 
 </p>
 <ul>
