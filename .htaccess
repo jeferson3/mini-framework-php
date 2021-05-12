@@ -6,7 +6,7 @@ Options -Indexes
 </FilesMatch>
 
 <FilesMatch "index[0-9]?\.php$">
-    Order Allow,Deny
+    Order allow,deny
     Allow from all
 </FilesMatch>
 
