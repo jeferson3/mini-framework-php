@@ -4,12 +4,12 @@ session_start();
 
 require "vendor/autoload.php";
 
-require "functions.php";
+require "src/Config/functions.php";
 
 require $_SERVER['DOCUMENT_ROOT']."/src/Config/Connection.php";
 
-require "start.php";
+require "src/Config/start.php";
 
 ssl();
 
-require "routes.php";
+require "src/routes/routes.php";
