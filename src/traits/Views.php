@@ -22,8 +22,8 @@ trait Views
         if (file_exists($file)){
             if (isset($args)) extract($args);
 
-            require_once($root."/functions.php");
-            require($root."/start.php");
+            require_once($root . "/src/Config/functions.php");
+            require($root . "/src/Config/start.php");
             require($root."/src/resources/views/$dir.php");
             exit();
         }
