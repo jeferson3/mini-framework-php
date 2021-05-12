@@ -12,7 +12,7 @@ class ProductController extends Controller
     /**
      * @return void
      */
-    public static function index()
+    public function index()
     {
         self::middleware('auth');
 
@@ -23,7 +23,7 @@ class ProductController extends Controller
     /**
      * @return void
      */
-    public static function create()
+    public function create()
     {
         self::middleware('auth');
         self::load('admin.products.create');
@@ -32,7 +32,7 @@ class ProductController extends Controller
     /**
      * @return void
      */
-    public static function store()
+    public function store()
     {
         self::middleware('auth');
 
@@ -68,7 +68,7 @@ class ProductController extends Controller
      * @param int $id
      * @return void
      */
-    public static function show(int $id)
+    public function show(int $id)
     {
         self::middleware('auth');
 
@@ -90,7 +90,7 @@ class ProductController extends Controller
      * @param int $id
      * @return void
      */
-    public static function update(int $id)
+    public function update(int $id)
     {
         self::middleware('auth');
         if (isset($_POST['name']) and !empty($_POST['name']) and
@@ -147,7 +147,7 @@ class ProductController extends Controller
      * @param int $id
      * @return void
      */
-    public static function delete(int $id)
+    public function delete(int $id)
     {
         self::middleware('auth');
 

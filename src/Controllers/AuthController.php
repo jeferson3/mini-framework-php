@@ -9,40 +9,19 @@ use App\traits\Flash;
 final class AuthController extends Controller
 {
 
-    public static function index() : void
+    public function index() : void
     {
         self::middleware('login');
         self::load("auth.login");
     }
 
-    public static function create()
+    public function create()
     {
         self::middleware('login');
         self::load('auth.register');
     }
 
-    public static function store()
-    {
-        self::redirect('home');
-    }
-
-    public static function show(int $id)
-    {
-        self::redirect('home');
-    }
-
-    public static function update(int $id)
-    {
-        self::redirect('home');
-    }
-
-    public static function delete(int $id) : void
-    {
-        self::redirect('home');
-    }
-
-
-    public static function login()
+    public function login()
     {
         self::middleware('login');
 
@@ -89,7 +68,7 @@ final class AuthController extends Controller
 
     }
 
-    public static function register()
+    public function register()
     {
         self::middleware('login');
 
@@ -153,7 +132,7 @@ final class AuthController extends Controller
 
     }
 
-    public static function logout()
+    public function logout()
     {
         unset($_SESSION['auth']);
         self::redirect('home');

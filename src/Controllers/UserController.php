@@ -9,7 +9,7 @@ final class UserController extends Controller
      * Return all users of database
      * @return void
      */
-    public static function index() : void
+    public function index() : void
     {
         self::middleware("auth");
 
@@ -21,7 +21,7 @@ final class UserController extends Controller
      * Load view create
      * @return void
      */
-    public static function create()
+    public function create()
     {
         self::middleware("auth");
         self::load('admin.users.create');
@@ -30,7 +30,7 @@ final class UserController extends Controller
     /**
      * @return void
      */
-    public static function store()
+    public function store()
     {
         self::middleware("auth");
 
@@ -52,7 +52,7 @@ final class UserController extends Controller
      * @param int $id
      * @return void
      */
-    public static function show(int $id)
+    public function show(int $id)
     {
         self::middleware("auth");
 
@@ -63,7 +63,7 @@ final class UserController extends Controller
      * @param int $id
      * @return void
      */
-    public static function update(int $id)
+    public function update(int $id)
     {
         self::middleware("auth");
 
@@ -73,7 +73,7 @@ final class UserController extends Controller
     /**
      * @param int $id
      */
-    public static function delete(int $id) : void
+    public function delete(int $id) : void
     {
         self::middleware("auth");
 
