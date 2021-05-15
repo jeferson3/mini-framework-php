@@ -42,7 +42,7 @@ function checkAccess(): void
  */
 function route(string $name, ?string $arg = null): string
 {
-    return \App\Config\Router::route($name, $arg);
+    return \SimpleRouter\Router::route($name, $arg);
 }
 
 function asset($name): string
