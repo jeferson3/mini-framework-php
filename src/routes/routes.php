@@ -1,6 +1,6 @@
 <?php
 
-use App\Config\Router;
+use SimpleRouter\Router;
 
 Router::get("/", "HomeController@index")->name('home');
 
