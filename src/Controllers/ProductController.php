@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Models\Product;
 use App\traits\Error;
 use App\traits\Flash;
+use SimpleRouter\config\Request;
 
 class ProductController extends Controller
 {
@@ -30,21 +31,20 @@ class ProductController extends Controller
     }
 
     /**
+     * @param Request $request
      * @return void
      */
-    public function store()
+    public function store(Request $request)
     {
         self::middleware('auth');
 
-        if (isset($_POST['name']) and !empty($_POST['name']) and
-            isset($_POST['price']) and !empty($_POST['price']) and
-            isset($_POST['description']) and !empty($_POST['description'])) {
+        if ($request->get('name') and $request->get('price') and $request->get('description')) {
 
 
             $product = new \App\Classes\Product();
-            $product->setName(trim($_POST['name']));
-            $product->setDescription(trim($_POST['description']));
-            $product->setPrice(str_replace([".", ","], ["", "."], $_POST['price']));
+            $product->setName(trim($request->get('name')));
+            $product->setDescription(trim($request->get('description')));
+            $product->setPrice(str_replace([".", ","], ["", "."], $request->get('price')));
             $product->setSlug(trim(strtolower(implode('-', explode(' ', $product->getName())))));
 
             if(!is_null(Product::whereSlug($product->getSlug())->first()))
@@ -88,23 +88,23 @@ class ProductController extends Controller
 
     /**
      * @param int $id
+     * @param Request $request
      * @return void
      */
-    public function update(int $id)
+    public function update(Request $request, int $id)
     {
         self::middleware('auth');
-        if (isset($_POST['name']) and !empty($_POST['name']) and
-            isset($_POST['price']) and !empty($_POST['price']) and
-            isset($_POST['description']) and !empty($_POST['description']))
+
+        if ($request->get('name') and $request->get('price') and $request->get('description'))
         {
             $oldProduct = Product::find($id);
 
             if (!is_null($oldProduct))
             {
                 $newProduct = new \App\Classes\Product();
-                $newProduct->setName(trim($_POST['name']));
-                $newProduct->setDescription(trim($_POST['description']));
-                $newProduct->setPrice(str_replace([".", ","], ["", "."], $_POST['price']));
+                $newProduct->setName(trim($request->get('name')));
+                $newProduct->setDescription(trim($request->get('description')));
+                $newProduct->setPrice(str_replace([".", ","], ["", "."], $request->get('price')));
                 $newProduct->setSlug(trim(strtolower(implode('-', explode(' ', $newProduct->getName())))));
 
                 $product = Product::whereSlug($newProduct->getSlug())->first();
