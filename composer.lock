@@ -442,12 +442,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jeferson3/mini-router-php.git",
-                "reference": "307fa02c901e943ee5ec4e343b5be1ab32de875b"
+                "reference": "143b42ffd45183b27b9033913bfd5ef438c914ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jeferson3/mini-router-php/zipball/307fa02c901e943ee5ec4e343b5be1ab32de875b",
-                "reference": "307fa02c901e943ee5ec4e343b5be1ab32de875b",
+                "url": "https://api.github.com/repos/jeferson3/mini-router-php/zipball/143b42ffd45183b27b9033913bfd5ef438c914ca",
+                "reference": "143b42ffd45183b27b9033913bfd5ef438c914ca",
                 "shasum": ""
             },
             "require": {
@@ -457,7 +457,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "App\\": "src//"
+                    "SimpleRouter\\": "src//"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -482,7 +482,7 @@
                 "issues": "https://github.com/jeferson3/mini-router-php/issues",
                 "source": "https://github.com/jeferson3/mini-router-php/tree/main"
             },
-            "time": "2021-05-12T21:48:31+00:00"
+            "time": "2021-05-15T23:18:18+00:00"
         },
         {
             "name": "nesbot/carbon",
